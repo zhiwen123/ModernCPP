@@ -10,6 +10,7 @@ template <typename T>
 class Base
 {
 public:
+	// Notice here virtual keyword is not needed.
 	void doSomething()
 	{
 		T& derived = static_cast<T&>(*this);
