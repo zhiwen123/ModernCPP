@@ -2,10 +2,15 @@
 //
 
 #include <iostream>
+#include "CRTP.H"
 
 int main()
 {
     std::cout << "Hello World!\n";
+
+    Derived derived;
+    derived.doSomething();
+    derived.baseInterface();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
